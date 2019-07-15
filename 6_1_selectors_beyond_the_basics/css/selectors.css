@@ -1,0 +1,110 @@
+/* Attribute Selectors ------------- */
+
+/* [class] {
+  color: red;
+} */
+
+[class="form-contact"] {
+  padding: 20px 24px;
+  background: #f4f7f8;
+}
+
+div[id="container"] {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* input[type="text"] {
+  background: #fdfee6;
+} */
+
+/* input[placeholder] {
+  background: #fdfee6;
+} */
+
+input[type="email"] {
+  background: #fdfee6;
+}
+
+/* Styling Form Buttons and Links with Attribute Selectors ------------- */
+
+/* input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+} */
+
+a[target="_blank"] {
+  color: #39add1;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+/* DRY Classes ------------- */
+
+.br {
+  border-radius: .5em;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 2em;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: .875em;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: .75;
+}
+
+.default {
+  background-color: #52bab3;
+}
+
+.error {
+  background-color: #ff7845;
+}
+
+/* @media (min-width: 769px) {
+  .inln {
+    width: auto;
+    display: inline-block;
+  }
+} */
+
+/* Child, Adjacent, and General Sibling Combinators ------------- */
+/* > Child */
+form>a {
+  font-size: .7em;
+}
+
+/* + Adjactent Sibling Combinator */
+@media (min-width: 769px) {
+  .inln {
+    width: auto;
+    display: inline-block;
+  }
+
+  .btn+.btn {
+    margin-left: 20px;
+  }
+}
+
+/* ~ General Sibling Combinator */
+/* h1~label {
+  background: tomato;
+  color: white;
+  padding: 5px;
+} */

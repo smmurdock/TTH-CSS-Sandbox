@@ -1,0 +1,52 @@
+/* --------------------------------------------------
+ PRACTICE
+-------------------------------------------------- */
+/* Task 1: Attributes Selector Challenge */
+/* A: Create an attribute selector that targets img elements with a title attribute value of "avatar". Give the elements a border radius of 50%. */
+img[title="avatar"] {
+  border-radius: 50%;
+}
+
+/* B: Next, create a new attribute selector that targets input elements with a type attribute value of password. Then, set the color to #ccc. */
+img[title="avatar"] {
+  border-radius: 50%;
+}
+
+input[type="password"] {
+  color: #ccc;
+}
+
+/* C: Finally, write a new attribute selector that targets input elements with a type attribute value of submit. Then, set the background color to #52bab3. */
+input[type="submit"] {
+  background-color: #52bab3;
+}
+
+/* Task 2: Combinators Challenge */
+/* A: Create a child selector that targets li elements that are direct children of .main-nav. Set the display to inline-block and the left margin to 20px. */
+.main-nav>li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* B: It looks like we need to decrease the space between h2 elements and the paragraph that immediately follows. Create a new selector that targets p elements that are adjacent to siblings of an h2. Then, set the top margin to .5em */
+h2+p {
+  margin-top: .5em;
+}
+
+/* QUIZ */
+/* 1: Fill in the blank */
+/* The general sibling selector uses a ______ as its combinator */
+/* ~ */
+
+/* 2: DRY stands for: */
+/* Don't Repeat Yourself */
+
+/* 3: Which of the following statements about child selectors is true? */
+/* They target elements that are direct children of an element. */
+
+/* 4: What are three combinators we can use in CSS Selectors? */
+/* >, +, ~ */
+
+/* 5: Fill in the blank */
+/* The adjacent sibling selector uses a _______ as its combinator */
+/* + */
